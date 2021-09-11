@@ -1,0 +1,575 @@
+/*Variables Globales*/
+/*Variables para responsive*/
+$breakpoint-mobile: 425px;
+$breakpoint-tablet: 426px;
+$breakpoint-pc: 992px;
+
+/*Variables Fuentes*/
+$font-family: 'Dosis', sans-serif;
+$font-mbl: 12px;
+$font-tbt: 15px;
+$font-pc: 20px;
+$bigTitles-mbl: 24px;
+$bigTitles-tbt: 27px;
+$bigTitles-pc: 32px;
+$titles-mbl: 17px;
+$titles-tbt: 20px;
+$titles-pc: 25px;
+$subtitles-mbl: 12px;
+$subtitles-tbt: 15px;
+$subtitles-pc: 20px;
+$parrafs-mbl: 10px;
+$parrafs-tbt: 13px;
+$font-medium: 500;
+$font-big: 700;
+$parrafs-pc: 20px;
+$font-color: black;
+$bigTitles-color: rgb(255, 255, 255);
+$titles-color: rgb(255, 255, 255);
+
+/*Declarando Mapas*/
+$proyectos: (
+    largometrajes: 2px,
+    cortometrajes: 2px,
+    videoclips: 2px,
+    publicidad: 2px
+);
+
+$proyectosPar: (
+    largometrajes: 2px,
+    videoclips: 2px
+);
+
+$proyectosImp: (
+    cortometrajes: 2px,
+    publicidad: 2px
+);
+
+@media screen  and (max-width: $breakpoint-mobile){
+    
+    .btn-outline-success--font{
+        font-family: $font-family;
+    }
+
+    .btn-outline-secondary--font{
+        font-family: $font-family;
+    }
+    
+    .realNews{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+    .realNews__portada{
+        display: contents;
+        width: 100%;
+        height: 150px;
+    }
+
+    .opacityDiv{
+        background-image: url("../Imagenes/Texturas/titles_tex.jpg");
+    }
+
+    .opacityDiv__bigTitles{/*Usando id para agregar estilos*/
+        font-family: $font-family;
+        font-size: $bigTitles-mbl;
+        font-weight: $font-big;
+        background-color: rgba(0, 0, 0, 0.486);
+        color: $bigTitles-color;
+        padding-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .opacityDiv__titles{
+        font-family: $font-family;
+        font-size: $titles-mbl;
+        font-weight: $font-medium;
+        background-color: rgba(0, 0, 0, 0.486);
+        color: $titles-color;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+    }
+
+    @each $proyecto, $valor in $proyectosPar {
+        
+        .#{$proyecto}__secPar {
+            background-color: #d7d6d86c;
+            border-radius: $valor;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    @each $proyecto, $valor in $proyectosImp {
+        
+        .#{$proyecto}__secImp {
+
+            background-color: #ffffffa1;
+            border-radius: $valor;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto}__vidText {
+            display: flex;
+            flex-wrap: wrap;  
+            align-content: flex-start;
+        }
+    }
+ 
+    .largometrajes__secVid{
+        width: 100%; 
+        height: 65%;
+    }
+
+    .cortometrajes__secVid{
+        width: 100%; 
+        height: 65%;
+    }
+
+    .videoclips__secVid{
+        width: 100%; 
+        height: 65%;
+    }  
+    
+    .videoclips__secImg{
+        width: 100%; 
+        height: 65%;
+    } 
+    
+    .publicidad__secImg{
+        width: 100%; 
+        height: 65%;
+    } 
+
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto}__containText {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-basis: 350px;
+            margin: 6%;
+        }
+    }
+
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto}__subtitles {
+            font-family: $font-family;
+            font-size: $subtitles-mbl;
+            font-weight: $font-big;
+        }
+    }
+
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto}__parrafs {
+            font-family: $font-family;
+            font-size: $parrafs-mbl;
+            font-weight: $font-medium;
+        }
+    }
+
+}
+
+@media screen  and (min-width: $breakpoint-tablet){
+    .btn-outline-success--font{
+        font-family: $font-family;
+    }
+
+    .btn-outline-secondary--font{
+        font-family: $font-family;
+    }
+
+    .realNews{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .realNews__portada{
+        display: contents;
+        width: 100%;
+        height: 150px;
+    }
+
+    .opacityDiv{
+        background-image: url("../Imagenes/Texturas/titles_tex.jpg");
+    }
+
+    .opacityDiv__bigTitles{/*Usando id para agregar estilos*/
+        font-family: $font-family;
+        font-size: $bigTitles-tbt;
+        font-weight: $font-big;
+        background-color: rgba(0, 0, 0, 0.486);
+        color: $bigTitles-color;
+        padding-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .opacityDiv__titles{
+        font-family: $font-family;
+        font-size: $titles-tbt;
+        font-weight: $font-medium;
+        background-color: rgba(0, 0, 0, 0.486);
+        color: $titles-color;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+    }
+
+    .largometrajes__secPar{
+        background-color: #d7d6d86c;
+        border-radius: 2px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .videoclips__secPar{
+        background-color: #d7d6d86c;
+        border-radius: 2px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cortometrajes__secImp{
+        background-color: #ffffffa1;
+        border-radius: 2px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .publicidad__secImp{
+        background-color: #ffffffa1;
+        border-radius: 2px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .largometrajes__vidText{
+        display: flex;
+        flex-wrap: wrap;  
+    }
+
+    .cortometrajes__vidText{
+        display: flex;
+        flex-wrap: wrap;  
+    }
+
+    .videoclips__vidText{
+        display: flex;
+        flex-wrap: wrap;  
+    }
+
+    .publicidad__vidText{
+        display: flex;
+        flex-wrap: wrap;  
+    }
+
+    .largometrajes__secVid{
+        width: 33%; 
+        height: 100%;
+    }
+
+    .cortometrajes__secVid{
+        width: 33%; 
+        height: 100%;
+    }
+
+    .videoclips__secVid{
+        width: 33%; 
+        height: 100%;
+    }
+
+    .videoclips__secImg{
+        width: 33%; 
+        height: 100%;
+    }
+
+    .publicidad__secImg{
+        width: 33%; 
+        height: 100%;
+    }
+
+    .largometrajes__containText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 370px;
+        margin: 3%;
+    }
+
+    .cortometrajes__containText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 370px;
+        margin: 3%;
+    }
+
+    .videoclips__containText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 370px;
+        margin: 3%;
+    }
+
+    .publicidad__containText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 370px;
+        margin: 3%;
+    }
+
+    .largometrajes__subtitles{
+        font-family: $font-family;
+        font-size: $subtitles-tbt;
+        font-weight: $font-big;
+    }
+
+    .cortometrajes__subtitles{
+        font-family: $font-family;
+        font-size: $subtitles-tbt;
+        font-weight: $font-big;
+    }
+
+    .videoclips__subtitles{
+        font-family: $font-family;
+        font-size: $subtitles-tbt;
+        font-weight: $font-big;
+    }
+
+    .publicidad__subtitles{
+        font-family: $font-family;
+        font-size: $subtitles-tbt;
+        font-weight: $font-big;
+    }
+
+    .largometrajes__parrafs{
+        font-family: $font-family;
+        font-size: $parrafs-tbt;
+        font-weight: $font-medium;
+    }
+
+    .cortometrajes__parrafs{
+        font-family: $font-family;
+        font-size: $parrafs-tbt;
+        font-weight: $font-medium;
+    }
+
+    .videoclips__parrafs{
+        font-family: $font-family;
+        font-size: $parrafs-tbt;
+        font-weight: $font-medium;
+    }
+
+    .publicidad__parrafs{
+        font-family: $font-family;
+        font-size: $parrafs-tbt;
+        font-weight: $font-medium;
+    }
+
+}
+
+@media screen  and (min-width: $breakpoint-pc){
+    .btn-outline-success--font{
+        font-family: $font-family;
+    }
+
+    .btn-outline-secondary--font{
+        font-family: $font-family;
+    }
+
+    .realNews{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+    .realNews__portada{
+        width: 100vw;
+    }
+
+    .opacityDiv{
+        background-image: url("../Imagenes/Texturas/titles_tex.jpg");
+    }
+
+    .opacityDiv__bigTitles{/*Usando id para agregar estilos*/
+        font-family: $font-family;
+        font-size: $bigTitles-pc;
+        font-weight: $font-big;
+        background-color: rgba(0, 0, 0, 0.486);
+        color: $bigTitles-color;
+        padding-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .opacityDiv__titles{
+        font-family: $font-family;
+        font-size: $titles-pc;
+        font-weight: $font-medium;
+        background-color: rgba(0, 0, 0, 0.486);
+        color: $titles-color;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+    }
+
+    .largometrajes__secPar{
+        background-color: #d7d6d86c;
+        border-radius: 2px;
+        display: flex;
+    }
+
+    .videoclips__secPar{
+        background-color: #d7d6d86c;
+        border-radius: 2px;
+        display: flex;
+    }
+
+    .cortometrajes__secImp{
+        background-color: #ffffffa1;
+        border-radius: 2px;
+        display: flex;
+    }
+
+    .publicidad__secImp{
+        background-color: #ffffffa1;
+        border-radius: 2px;
+        display: flex;
+    }
+
+    .largometrajes__vidText{
+        display: flex; 
+    }
+
+    .cortometrajes__vidText{
+        display: flex; 
+    }
+
+    .videoclips__vidText{
+        display: flex; 
+    }
+
+    .publicidad__vidText{
+        display: flex; 
+    }
+
+    .largometrajes__secVid{
+        width: 33%; 
+        height: 100%;
+    }
+
+    .cortometrajes__secVid{
+        width: 33%; 
+        height: 100%;
+    }
+
+    .videoclips__secVid{
+        width: 33%; 
+        height: 100%;
+    }
+
+    .videoclips__secImg{
+        width: 33%; 
+        height: 100%;
+    }
+
+    .publicidad__secImg{
+        width: 33%; 
+        height: 100%;
+    }
+
+    .largometrajes__containText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 350px;
+        margin-right: 35%;
+    }
+
+    .cortometrajes__containText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 350px;
+        margin-right: 35%;
+    }
+
+    .videoclips__containText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 350px;
+        margin-right: 35%;
+    }
+
+    .publicidad__containText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 350px;
+        margin-right: 35%;
+    }
+
+    .largometrajes__subtitles{
+        font-family: $font-family;
+        font-size: $subtitles-pc;
+        font-weight: $font-big;
+    }
+
+    .cortometrajes__subtitles{
+        font-family: $font-family;
+        font-size: $subtitles-pc;
+        font-weight: $font-big;
+    }
+
+    .videoclips__subtitles{
+        font-family: $font-family;
+        font-size: $subtitles-pc;
+        font-weight: $font-big;
+    }
+
+    .publicidad__subtitles{
+        font-family: $font-family;
+        font-size: $subtitles-pc;
+        font-weight: $font-big;
+    }
+
+    .largometrajes__parrafs{
+        font-family: $font-family;
+        font-size: $parrafs-pc;
+        font-weight: $font-medium;
+    }
+
+    .cortometrajes__parrafs{
+        font-family: $font-family;
+        font-size: $parrafs-pc;
+        font-weight: $font-medium;
+    }
+
+    .videoclips__parrafs{
+        font-family: $font-family;
+        font-size: $parrafs-pc;
+        font-weight: $font-medium;
+    }
+
+    .publicidad__parrafs{
+        font-family: $font-family;
+        font-size: $parrafs-pc;
+        font-weight: $font-medium;
+    }
+
+}

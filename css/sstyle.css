@@ -1,0 +1,681 @@
+/*Variables Globales*/
+/*Variables para responsive*/
+/*Variables Fuentes*/
+/*Declarando Mapas*/
+@media screen and (max-width: 425px) {
+  .btn-outline-success--font {
+    font-family: "Dosis", sans-serif;
+  }
+  .btn-outline-secondary--font {
+    font-family: "Dosis", sans-serif;
+  }
+  .realNews {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+  .realNews__portada {
+    display: contents;
+    width: 100%;
+    height: 150px;
+  }
+  .opacityDiv {
+    background-image: url("../Imagenes/Texturas/titles_tex.jpg");
+  }
+  .opacityDiv__bigTitles {
+    /*Usando id para agregar estilos*/
+    font-family: "Dosis", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: white;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .opacityDiv__titles {
+    font-family: "Dosis", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+  .largometrajes__secPar {
+    background-color: #d7d6d86c;
+    border-radius: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .videoclips__secPar {
+    background-color: #d7d6d86c;
+    border-radius: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cortometrajes__secImp {
+    background-color: #ffffffa1;
+    border-radius: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .publicidad__secImp {
+    background-color: #ffffffa1;
+    border-radius: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .largometrajes__vidText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  .cortometrajes__vidText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  .videoclips__vidText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  .publicidad__vidText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  .largometrajes__secVid {
+    width: 100%;
+    height: 65%;
+  }
+  .cortometrajes__secVid {
+    width: 100%;
+    height: 65%;
+  }
+  .videoclips__secVid {
+    width: 100%;
+    height: 65%;
+  }
+  .videoclips__secImg {
+    width: 100%;
+    height: 65%;
+  }
+  .publicidad__secImg {
+    width: 100%;
+    height: 65%;
+  }
+  .largometrajes__containText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 350px;
+        flex-basis: 350px;
+    margin: 6%;
+  }
+  .cortometrajes__containText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 350px;
+        flex-basis: 350px;
+    margin: 6%;
+  }
+  .videoclips__containText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 350px;
+        flex-basis: 350px;
+    margin: 6%;
+  }
+  .publicidad__containText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 350px;
+        flex-basis: 350px;
+    margin: 6%;
+  }
+  .largometrajes__subtitles {
+    font-family: "Dosis", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .cortometrajes__subtitles {
+    font-family: "Dosis", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .videoclips__subtitles {
+    font-family: "Dosis", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .publicidad__subtitles {
+    font-family: "Dosis", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .largometrajes__parrafs {
+    font-family: "Dosis", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .cortometrajes__parrafs {
+    font-family: "Dosis", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .videoclips__parrafs {
+    font-family: "Dosis", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .publicidad__parrafs {
+    font-family: "Dosis", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 426px) {
+  .btn-outline-success--font {
+    font-family: "Dosis", sans-serif;
+  }
+  .btn-outline-secondary--font {
+    font-family: "Dosis", sans-serif;
+  }
+  .realNews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .realNews__portada {
+    display: contents;
+    width: 100%;
+    height: 150px;
+  }
+  .opacityDiv {
+    background-image: url("../Imagenes/Texturas/titles_tex.jpg");
+  }
+  .opacityDiv__bigTitles {
+    /*Usando id para agregar estilos*/
+    font-family: "Dosis", sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: white;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .opacityDiv__titles {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+  .largometrajes__secPar {
+    background-color: #d7d6d86c;
+    border-radius: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .videoclips__secPar {
+    background-color: #d7d6d86c;
+    border-radius: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cortometrajes__secImp {
+    background-color: #ffffffa1;
+    border-radius: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .publicidad__secImp {
+    background-color: #ffffffa1;
+    border-radius: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .largometrajes__vidText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cortometrajes__vidText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .videoclips__vidText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .publicidad__vidText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .largometrajes__secVid {
+    width: 33%;
+    height: 100%;
+  }
+  .cortometrajes__secVid {
+    width: 33%;
+    height: 100%;
+  }
+  .videoclips__secVid {
+    width: 33%;
+    height: 100%;
+  }
+  .videoclips__secImg {
+    width: 33%;
+    height: 100%;
+  }
+  .publicidad__secImg {
+    width: 33%;
+    height: 100%;
+  }
+  .largometrajes__containText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 370px;
+        flex-basis: 370px;
+    margin: 3%;
+  }
+  .cortometrajes__containText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 370px;
+        flex-basis: 370px;
+    margin: 3%;
+  }
+  .videoclips__containText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 370px;
+        flex-basis: 370px;
+    margin: 3%;
+  }
+  .publicidad__containText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 370px;
+        flex-basis: 370px;
+    margin: 3%;
+  }
+  .largometrajes__subtitles {
+    font-family: "Dosis", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .cortometrajes__subtitles {
+    font-family: "Dosis", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .videoclips__subtitles {
+    font-family: "Dosis", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .publicidad__subtitles {
+    font-family: "Dosis", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .largometrajes__parrafs {
+    font-family: "Dosis", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .cortometrajes__parrafs {
+    font-family: "Dosis", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .videoclips__parrafs {
+    font-family: "Dosis", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .publicidad__parrafs {
+    font-family: "Dosis", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .btn-outline-success--font {
+    font-family: "Dosis", sans-serif;
+  }
+  .btn-outline-secondary--font {
+    font-family: "Dosis", sans-serif;
+  }
+  .realNews {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+  .realNews__portada {
+    width: 100vw;
+  }
+  .opacityDiv {
+    background-image: url("../Imagenes/Texturas/titles_tex.jpg");
+  }
+  .opacityDiv__bigTitles {
+    /*Usando id para agregar estilos*/
+    font-family: "Dosis", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: white;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .opacityDiv__titles {
+    font-family: "Dosis", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+  .largometrajes__secPar {
+    background-color: #d7d6d86c;
+    border-radius: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .videoclips__secPar {
+    background-color: #d7d6d86c;
+    border-radius: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cortometrajes__secImp {
+    background-color: #ffffffa1;
+    border-radius: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .publicidad__secImp {
+    background-color: #ffffffa1;
+    border-radius: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .largometrajes__vidText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cortometrajes__vidText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .videoclips__vidText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .publicidad__vidText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .largometrajes__secVid {
+    width: 33%;
+    height: 100%;
+  }
+  .cortometrajes__secVid {
+    width: 33%;
+    height: 100%;
+  }
+  .videoclips__secVid {
+    width: 33%;
+    height: 100%;
+  }
+  .videoclips__secImg {
+    width: 33%;
+    height: 100%;
+  }
+  .publicidad__secImg {
+    width: 33%;
+    height: 100%;
+  }
+  .largometrajes__containText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 350px;
+        flex-basis: 350px;
+    margin-right: 35%;
+  }
+  .cortometrajes__containText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 350px;
+        flex-basis: 350px;
+    margin-right: 35%;
+  }
+  .videoclips__containText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 350px;
+        flex-basis: 350px;
+    margin-right: 35%;
+  }
+  .publicidad__containText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 350px;
+        flex-basis: 350px;
+    margin-right: 35%;
+  }
+  .largometrajes__subtitles {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .cortometrajes__subtitles {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .videoclips__subtitles {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .publicidad__subtitles {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .largometrajes__parrafs {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .cortometrajes__parrafs {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .videoclips__parrafs {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .publicidad__parrafs {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+/*# sourceMappingURL=sstyle.css.map */

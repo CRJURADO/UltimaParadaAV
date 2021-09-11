@@ -1,0 +1,1285 @@
+/*Reseteo de los estilos por defecto de las paginas*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Estilos de la cabecera y menu*/
+.top{
+    color:floralwhite;
+    border-radius: 2px;
+}
+
+.logo{
+    width: 100%;
+}
+
+#logoDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.menuList{
+    background-color: #ffffff;/*color de fondo*/
+    display: flex;/*Me acomoda el menu en fila en vez de columna*/
+    justify-content: space-evenly;
+    list-style: none;  
+}
+
+.menuList li>a{
+    background-color: rgba(255, 255, 255, 0.514);
+    display: block;
+    padding: 7px;
+}
+
+.menuList li>a:hover{
+    background-color: rgba(107, 126, 139, 0.705);
+    color: white;
+
+}
+
+.menuList >li>ul{
+    display: none;
+    list-style: none;
+  }
+
+.menuList >li:hover>ul {
+    display:block;
+    z-index: 2;
+    position: absolute;
+  }
+
+a.refStyle{
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color:black;
+    text-decoration: none;
+}
+
+/*Estilos del pie de pagina*/
+.foot{
+    background-image: url("../Imagenes/Texturas/Textura.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    color:rgb(255, 255, 255);
+    border-radius: 2px;
+    margin-bottom: 5px;
+    display: flex;
+
+}
+
+.footTitles{
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.foo{
+    height: auto;
+}
+
+.listPages{
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    list-style: none;
+}
+
+.footLists{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.678);
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+a.footStyle{
+    font-family: 'Dosis', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: darkgray;
+    text-decoration: none;
+}
+
+.footContact{
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.footCont{
+    right:80px;
+}
+
+
+/*Titulos y subtitulos*/
+#bigTitles{/*Usando id para agregar estilos*/
+    font-family: 'Dosis', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: rgb(255, 255, 255);
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#titles{
+    font-family: 'Dosis', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+.subtitles{
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+/*grids*/
+.grid-main{
+    display: grid;
+    grid-template-rows: 50px 50px 115px 50px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*Fondo para titulos y subtitulos*/
+.opacityDiv1{
+    background-image: url("../Imagenes/Texturas/titles_tex.jpg");
+    grid-column: 1/2;
+}
+
+.opacityDiv2{
+    background-image: url("../Imagenes/Texturas/titles_tex.jpg");
+    grid-column: 1/2;
+}
+
+.opacityDiv3{
+    background-image: url("../Imagenes/Texturas/titles_tex.jpg");
+    grid-column: 1/2;
+}
+
+/*Textos*/
+.parrafs{
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.ourValues{
+    background-color: #ffffff;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 2px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+/*Division de secciones*/
+.secImp{
+    background-color: #ffffffa1;
+    border-radius: 2px;
+    display: flex;
+}
+
+.secImp1{
+    background-color: #ffffffa1;
+    border-radius: 2px;
+    display: flex;
+    grid-column: 1/2;
+    padding: 1rem;
+}
+
+.secPar{
+    background-color: #d7d6d86c;
+    border-radius: 2px;
+    display: flex;
+}
+
+.secPar1{
+    background-color: #d7d6d86c;
+    border-radius: 2px;
+    display: flex;
+    grid-column: 1/2;
+    padding: 1rem;
+}
+
+.secPar2{
+    background-color: #d7d6d86c;
+    border-radius: 2px;
+    display: flex;
+    grid-column: 2/2;
+    grid-row: 1/8;
+    padding: 1rem;
+}
+
+.secPar3{
+    background-color: #d7d6d86c;
+    border-radius: 2px;
+    display: flex;
+    grid-column: 3/3;
+    grid-row: 1/8;
+    padding: 1rem;
+}
+
+/*Division de imagenes, videos y textos*/
+.imgText{
+    display: flex;  
+    justify-content: space-between;
+}
+
+.vidText{
+    display: flex;  
+}
+
+.secImg{
+    width: 33%; 
+    height: 100%;
+}
+
+.secVid{
+    width: 33%; 
+    height: 100%;
+}
+
+.secVid1{
+    width: 57%; 
+    height: 100%;
+}
+
+.secVid2{
+    width: 53%; 
+    height: 100%;
+}
+.containText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 350px;
+    margin-right: 35%;
+}
+
+.containText1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 200px;
+    margin: 15px;
+}
+
+.containText2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 200px;
+    margin: 15px;
+}
+
+/*Tablas*/
+.listActors{
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgba(105, 105, 105, 0.425);
+    margin-top: 25px;
+    margin-left: 30px;
+    border-style: double;
+}
+
+/*Botones*/
+.buttons{
+    padding-left: 5px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/*Estilos hoja de contacto*/
+.labels{
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    display: inline-block;
+}
+
+.contactGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-image: url("../Imagenes/Contenido/bg_contacto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contactSheet{
+    grid-column: 2/4;
+    background-color: rgba(230, 230, 250, 0.849);
+    padding: 25px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 1em 0 rgba(43, 43, 43, 0.25);
+}
+
+/*Inputs de Contacto*/
+.inp {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .inp .label {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    transform-origin: 0 0;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+    pointer-events: none;
+  }
+  .inp .focus-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  .inp input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+    width: 100%;
+    border: 0;
+    font-family: 'Dosis', sans-serif;
+    padding: 16px 12px 0 12px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.02);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    color: #000;
+    transition: all 0.15s ease;
+  }
+  .inp input:hover {
+    background: rgba(0, 0, 0, 0.04);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+  }
+  .inp input:not(:-moz-placeholder-shown) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+  }
+  .inp input:not(:-ms-input-placeholder) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+  }
+  .inp input:not(:placeholder-shown) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+  }
+  .inp input:focus {
+    background: rgba(0, 0, 0, 0.05);
+    outline: none;
+    box-shadow: inset 0 -2px 0 #0077FF;
+  }
+  .inp input:focus + .label {
+    color: #0077FF;
+    transform: translate3d(0, -12px, 0) scale(0.75);
+  }
+  .inp input:focus + .label + .focus-bg {
+    transform: scaleX(1);
+    transition: all 0.1s ease;
+  }
+
+  /*Dropdown Aplica Para*/
+  label.field {
+    border-radius: 2px;
+    color: #666;
+    display: block;
+    max-width: 318px;
+    padding: 8px;
+    opacity: 0;
+    position: relative;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    z-index: 1;
+  }
+  label.field span {
+    color: inherit;
+    display: block;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    left: 9px;
+    pointer-events: none;
+    position: absolute;
+    top: 32px;
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transition-property: color, font-size, top;
+    transition-property: color, font-size, top;
+    z-index: 1;
+  }
+  label.field span.required::after {
+    color: inherit;
+    content: "*";
+    display: block;
+    height: 20px;
+    left: -20px;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 20px;
+  }
+  .error label.field span {
+    color: #F02318;
+  }
+  label.field .psuedo_select {
+    background: rgba(255, 255, 255, 0);
+    position: relative;
+    border-color: #666;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    color: #666;
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    height: 24px;
+    line-height: 24px;
+    margin: 24px 32px 0 0;
+    min-width: 250px;
+    padding-top: 24px;
+    outline: 0;
+    z-index: 1;
+  }
+  label.field .psuedo_select::after {
+    background: url("data:image/svg+xml;utf8,<svg fill='#666' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'> <path d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z'/> <path d='M0-.75h24v24H0z' fill='none'/> </svg>"), no-repeat;
+    content: "";
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transition-property: background;
+    transition-property: background;
+  }
+  label.field .psuedo_select .selected {
+    height: 24px;
+    left: 1px;
+    line-height: 24px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateY(24px);
+            transform: translateY(24px);
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: opacity, transform;
+    transition-property: opacity, transform, -webkit-transform;
+    will-change: transform;
+  }
+  label.field .psuedo_select ul {
+    background: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    display: block;
+    height: 0;
+    list-style: none;
+    margin-top: 2px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 1px;
+    pointer-events: none;
+    -webkit-transition-property: height, opacity;
+    transition-property: height, opacity;
+    width: 100%;
+    z-index: 2;
+  }
+  label.field .psuedo_select ul li {
+    height: 32px;
+    padding: 8px 4px;
+  }
+  label.field .deselect {
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+  }
+  label.field.focused {
+    color: #007BED;
+  }
+  label.field.focused .psuedo_select {
+    border-color: #007BED;
+  }
+  label.field.focused .psuedo_select::after {
+    background: url("data:image/svg+xml;utf8,<svg fill='#007BED' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'> <path d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z'/> <path d='M0-.75h24v24H0z' fill='none'/> </svg>"), no-repeat;
+  }
+  label.field.focused .psuedo_select ul {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+@media screen  and (max-width: 425px){
+    /*Logo y Menu*/
+    #logoDiv{
+        display: flex;
+        flex-direction: column;
+        height: 128px;
+    }
+    
+    .menuList{
+        background-color: #ffffff;/*color de fondo*/
+        display: flex;/*Me acomoda el menu en fila en vez de columna*/
+        justify-content: space-evenly;
+        list-style: none;  
+        margin-left: 10px;
+    }
+    
+    a.refStyle{
+        font-family: 'Dosis', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        color:black;
+        text-decoration: none;
+    }
+
+    /*Titulos y subtitulos*/
+    #bigTitles{/*Usando id para agregar estilos*/
+        font-family: 'Dosis', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        background-color: rgba(0, 0, 0, 0.486);
+        color: rgb(255, 255, 255);
+        padding-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #titles{
+        font-family: 'Dosis', sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        background-color: rgba(0, 0, 0, 0.486);
+        color: rgb(255, 255, 255);
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+    }
+
+    .subtitles{
+        font-family: 'Dosis', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    /*Fondo para titulos y subtitulos*/
+    .opacityDiv1{
+        background-image: url("../Imagenes/Texturas/titles_tex.jpg");
+        grid-column: 1/3;
+    }
+
+    .opacityDiv2{
+        background-image: url("../Imagenes/Texturas/titles_tex.jpg");
+        grid-column: 1/3;
+    }
+
+    .opacityDiv3{
+        background-image: url("../Imagenes/Texturas/titles_tex.jpg");
+        grid-column: 1/3;
+    }
+
+    /*Textos*/
+    .parrafs{
+        font-family: 'Dosis', sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    /*Contenido de la pagina*/
+    .ourValues{
+        background-color: #ffffff;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        border-radius: 2px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    .imgTextIdx{
+        display: flex;  
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+    }
+
+    .imgText{
+        display: flex;  
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    .imgText1{
+        width: -webkit-fill-available;   
+    }
+
+    .vidText{
+        display: flex;
+        flex-wrap: wrap;  
+        align-content: flex-start;
+    }
+
+    .secImgIdx{
+        width: 100%;
+        height: 80%; 
+    }
+
+    .secImg{
+       width: 100%;
+       height: 100%; 
+    }
+
+    .secVid{
+        width: 100%; 
+        height: 70%;
+    }
+
+    .secVid1{
+        width: 130%; 
+        height: 50%;
+    }
+    
+    .secVid2{
+        width: 100%; 
+        height: 50%;
+    }
+
+    .containTextIdx{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 350px;
+        margin: 6%;
+    }
+
+    .containText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 380px;
+        margin: 3%;
+    }
+
+    .containText1{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin: 10px;
+    }
+    
+    .containText2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 200px;
+        margin: 15px;
+    }
+
+    .secParIdx{
+        background-color: #d7d6d86c;
+        border-radius: 2px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .secPar{
+        background-color: #d7d6d86c;
+        border-radius: 2px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .secPar1{
+        background-color: #d7d6d86c;
+        border-radius: 2px;
+        display: flex;
+        grid-column: 1/3;
+        padding: 1rem;
+    }
+
+    .secImp1{
+        background-color: #d7d6d86c;
+        border-radius: 2px;
+        display: flex;
+        grid-column: 1/3;
+        padding: 1rem;
+    }
+
+    .secPar2{
+        background-color: #d7d6d86c;
+        border-radius: 2px;
+        display: flex;
+        grid-column: 3/3;
+        grid-row: 1/8;
+        padding: 1rem;
+    }
+    
+    .secPar3{
+        background-color: #d7d6d86c;
+        border-radius: 2px;
+        display: flex;
+        grid-column: 3/3;
+        grid-row: 8/8;
+        padding: 1rem;
+    }
+
+    /*Tablas*/
+    .listActors{
+        font-family: 'Dosis', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        background-color: rgba(105, 105, 105, 0.425);
+        margin-top: 20px;
+        margin-left: 5px;
+        border-style: double;
+    }
+
+    /*Hoja de contacto*/
+    .contactGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        background-image: url("../Imagenes/Contenido/bg_contacto.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .contactSheet{
+        grid-column: 2/8;
+        background-color: rgba(230, 230, 250, 0.849);
+        padding: 15px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 1em 0 rgba(43, 43, 43, 0.25);
+    }
+
+    /*Estilos del pie de pagina*/
+    .footTitles{
+        font-family: 'Dosis', sans-serif;
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+    .listPages{
+        font-family: 'Dosis', sans-serif;
+        font-size: 5px;
+        font-weight: 500;
+        list-style: none;
+        padding-left: 25px;
+    }
+
+    a.footStyle{
+        font-family: 'Dosis', sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        color: darkgray;
+        text-decoration: none;
+    }
+
+    .footContact{
+        font-family: 'Dosis', sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .footLists{
+        display: flex;
+        justify-content: flex-start;
+        background-color: rgba(0, 0, 0, 0.678);
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 8px;
+        margin-right: 15px;
+    }
+    
+}
+
+@media screen  and (min-width: 426px){
+    /*Logo y Menu*/
+    .logo{
+        display: contents;
+        width: 100%;
+        height: 150px;
+    }
+
+    #logoDiv{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menuList{
+        background-color: #ffffff;/*color de fondo*/
+        display: flex;/*Me acomoda el menu en fila en vez de columna*/
+        justify-content: space-evenly;
+        list-style: none;  
+        margin-left: 0px;
+    }
+
+    a.refStyle{
+        font-family: 'Dosis', sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        color:black;
+        text-decoration: none;
+    }
+
+    /*Titulos y subtitulos*/
+    #bigTitles{/*Usando id para agregar estilos*/
+        font-family: 'Dosis', sans-serif;
+        font-size: 27px;
+        font-weight: 700;
+        background-color: rgba(0, 0, 0, 0.486);
+        color: rgb(255, 255, 255);
+        padding-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #titles{
+        font-family: 'Dosis', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: rgba(0, 0, 0, 0.486);
+        color: rgb(255, 255, 255);
+        padding-top: 10px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+    }
+
+    .subtitles{
+        font-family: 'Dosis', sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    /*Textos*/
+    .parrafs{
+        font-family: 'Dosis', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    /*Tablas*/
+    .listActors{
+        font-family: 'Dosis', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        background-color: rgba(105, 105, 105, 0.425);
+        margin-top: 20px;
+        margin-left: 5px;
+        border-style: double;
+    }
+
+    /*Contenido de la pagina*/
+    .ourValues{
+        background-color: #ffffff;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        border-radius: 2px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    .imgTextIdx{
+        display: flex;  
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 95px;
+    }
+
+    .imgText{
+        display: flex;  
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    .imgText1{
+        display: contents;   
+    }
+
+    .secImgIdx{
+        width: 100%;
+        height: 100%; 
+    }
+
+    .secImg{
+       width: 100%;
+       height: 100%; 
+    }
+
+    .secVid1{
+        width: 100%; 
+        height: 100%;
+    }
+    
+    .secVid2{
+        width: 94%; 
+        height: 100%;
+    }
+
+    .containTextIdx{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 350px;
+        margin: 1%;
+        margin-left: 20px;
+        padding: 10px;
+    }
+
+    .containText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 370px;
+        margin: 3%;
+    }
+
+    .vidText{
+        display: flex;
+        flex-wrap: wrap;  
+    }
+
+    .secParIdx{
+        background-color: #d7d6d86c;
+        border-radius: 2px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .secPar{
+        background-color: #d7d6d86c;
+        border-radius: 2px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .secPar2{
+        background-color: #d7d6d86c;
+        border-radius: 2px;
+        display: flex;
+        grid-column: 2/2;
+        grid-row: 1/8;
+        padding: 1rem;
+        align-items: flex-start;
+    }
+    
+    .secPar3{
+        background-color: #d7d6d86c;
+        border-radius: 2px;
+        display: flex;
+        grid-column: 3/3;
+        grid-row: 1/8;
+        padding: 1rem;
+        align-items: flex-start;
+    }
+
+    /*Estilos del pie de pagina*/
+    .footTitles{
+        font-family: 'Dosis', sans-serif;
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+    .listPages{
+        font-family: 'Dosis', sans-serif;
+        font-size: 5px;
+        font-weight: 500;
+        list-style: none;
+    }
+
+    a.footStyle{
+        font-family: 'Dosis', sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        color: darkgray;
+        text-decoration: none;
+    }
+
+    .footContact{
+        font-family: 'Dosis', sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }    
+    
+}
+
+@media screen  and (min-width: 992px){
+    /*Menu*/
+    #navMenu{
+        display: flex;
+        --bs-bg-opacity:0;
+        background-color: rgb(255, 255, 255) !important;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+
+    #contFluid{
+        display: flex;
+        width: auto;
+    }
+
+    .navContent{
+        display: flex;
+    }
+    
+    #menuList{
+        background-color: #ffffff;/*color de fondo*/
+        display: flex;/*Me acomoda el menu en fila en vez de columna*/
+        justify-content: space-evenly;
+        list-style: none;
+        margin-left: 0px;  
+    }
+    
+    #menuList li>a{
+        background-color: rgba(255, 255, 255, 0.514);
+        display: block;
+        padding: 7px;
+        color: black;
+    }
+    
+    #menuList li>a:hover{
+        background-color: rgba(107, 126, 139, 0.705);
+        color: white;
+        
+    
+    }
+    
+    #menuList >li>ul{
+        display: none;
+        list-style: none;
+        min-width: 7.5rem;
+        background-color: #ffffff29;
+      }
+    
+    #menuList >li:hover>ul {
+        display:block;
+        z-index: 2;
+        position: absolute;
+      }
+      
+    a.refStyle{
+        font-family: 'Dosis', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        color:black;
+        text-decoration: none;
+    }
+
+    /*Titulos y subtitulos*/
+    #bigTitles{/*Usando id para agregar estilos*/
+        font-family: 'Dosis', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        background-color: rgba(0, 0, 0, 0.486);
+        color: rgb(255, 255, 255);
+        padding-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #titles{
+        font-family: 'Dosis', sans-serif;
+        font-size: 25px;
+        font-weight: 500;
+        background-color: rgba(0, 0, 0, 0.486);
+        color: rgb(255, 255, 255);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+    }
+
+    .subtitles{
+        font-family: 'Dosis', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    /*Textos*/
+    .parrafs{
+        font-family: 'Dosis', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    /*Division de imagenes y textos*/
+    .imgText{
+        display: flex;  
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        margin-bottom: 0px;
+        
+    }
+
+    .imgText1{
+        display: flex;  
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        margin-bottom: 0px;
+        width: 729px; 
+    }
+
+    /*Contenido de la pagina*/
+    .secPar{
+        background-color: #d7d6d86c;
+        border-radius: 2px;
+        display: flex;
+    }
+
+    .secParIdx{
+        height: auto;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        width: 660px;
+        display: table-row-group;
+    }
+
+    .secParIdx .imgTextIdx{
+        border: 5px solid #fff;
+        height: 270px;
+        float: left;
+        margin: 5px;
+        position: relative;
+        overflow: hidden;
+        width: 429px;
+        box-shadow: 1px 1px 1px 1px #ccc;
+    }
+
+    .secImg{
+        width: 33%; 
+        height: 100%;
+    }
+
+    .secImgIdx{
+       width: 430px;
+       height: 280px; 
+       position: absolute;
+       left: 0;
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;	
+	    transition: all 300ms ease-out;
+    }
+
+    .containTextIdx{
+        background-color: rgba(0,0,0,0.8);
+	    position: absolute;
+	    color: #fff;
+	    z-index: 100;
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;	
+		transition: all 300ms ease-out;
+	    left: 0;
+    }
+
+    .secParIdx .imgTextIdx .containTextIdx{
+        width: 430px;
+	    height: 260px;	
+	    text-align: justify;
+	    padding: 50px;
+	    left: 429px;
+        margin: 0%;
+    }
+
+    .secParIdx .imgTextIdx:hover .containTextIdx{
+        background-color: rgba(0,0,0,1) !important;
+        -moz-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+
+    .secParIdx .imgTextIdx:hover .secImgIdx{
+        -moz-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    
+
+    /*Estilos del pie de pagina*/
+    .footTitles{
+        font-family: 'Dosis', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .listPages{
+        font-family: 'Dosis', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        list-style: none;
+    }
+
+    a.footStyle{
+        font-family: 'Dosis', sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        color: darkgray;
+        text-decoration: none;
+    }
+
+    .footContact{
+        font-family: 'Dosis', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+    
+}
