@@ -3,6 +3,10 @@
 /*Variables Fuentes*/
 /*Declarando Mapas*/
 @media screen and (max-width: 425px) {
+  .logo img {
+    width: 100vw;
+  }
+  /*Botones de contactSheet*/
   .btn-outline-success--font {
     font-family: "Dosis", sans-serif;
   }
@@ -19,6 +23,9 @@
     display: contents;
     width: 100%;
     height: 150px;
+  }
+  .realNews__portada img {
+    width: 100vw;
   }
   .opacityDiv {
     background-image: url("../Imagenes/Texturas/titles_tex.jpg");
