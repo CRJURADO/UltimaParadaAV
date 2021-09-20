@@ -1,58 +1,17 @@
-/*Variables Globales*/
-/*Variables para responsive*/
-$breakpoint-mobile: 425px;
-$breakpoint-tablet: 426px;
-$breakpoint-pc: 992px;
+/*Importando los parcials*/
+@import 'vars';
+@import 'header';
+@import 'footer';
 
-/*Variables Fuentes*/
-$font-family: 'Dosis', sans-serif;
-$font-mbl: 12px;
-$font-tbt: 15px;
-$font-pc: 20px;
-$bigTitles-mbl: 24px;
-$bigTitles-tbt: 27px;
-$bigTitles-pc: 32px;
-$titles-mbl: 17px;
-$titles-tbt: 20px;
-$titles-pc: 25px;
-$subtitles-mbl: 12px;
-$subtitles-tbt: 15px;
-$subtitles-pc: 20px;
-$parrafs-mbl: 10px;
-$parrafs-tbt: 13px;
-$font-medium: 500;
-$font-big: 700;
-$parrafs-pc: 20px;
-$font-color: black;
-$bigTitles-color: rgb(255, 255, 255);
-$titles-color: rgb(255, 255, 255);
-
-/*Declarando Mapas*/
-$proyectos: (
-    largometrajes: 2px,
-    cortometrajes: 2px,
-    videoclips: 2px,
-    publicidad: 2px
-);
-
-$proyectosPar: (
-    largometrajes: 2px,
-    videoclips: 2px
-);
-
-$proyectosImp: (
-    cortometrajes: 2px,
-    publicidad: 2px
-);
 
 @media screen  and (max-width: $breakpoint-mobile){
+
+    /*Logo responsive*/
     .logo{
         img{
             width: 100vw;
         }
     }
-
-
     
     /*Botones de contactSheet*/
     .btn-outline-success--font{

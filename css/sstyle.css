@@ -1,8 +1,176 @@
-/*Variables Globales*/
+/*Importando los parcials*/
 /*Variables para responsive*/
 /*Variables Fuentes*/
+/*Variables generales*/
 /*Declarando Mapas*/
+/*Estilos del pie de pagina*/
+.foot {
+  background-image: url("../Imagenes/Texturas/Textura.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  color: white;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media screen and (max-width: 425px) {
+  .foot__titles {
+    font-family: "Dosis", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .foot__listPages {
+    font-family: "Dosis", sans-serif;
+    font-size: 5px;
+    font-weight: 500;
+    list-style: none;
+    padding-left: 25px;
+  }
+  .foot__lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.678);
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    margin-right: 15px;
+  }
+  a.foot__style {
+    font-family: "Dosis", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: darkgray;
+    text-decoration: none;
+  }
+  div.foot__cont ul.foot__contact {
+    font-family: "Dosis", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 426px) {
+  .foot__titles {
+    font-family: "Dosis", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .foot__listPages {
+    font-family: "Dosis", sans-serif;
+    font-size: 5px;
+    font-weight: 500;
+    list-style: none;
+  }
+  .foot__lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.678);
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    margin-right: 15px;
+  }
+  a.foot__style {
+    font-family: "Dosis", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: darkgray;
+    text-decoration: none;
+  }
+  div.foot__cont ul.foot__contact {
+    font-family: "Dosis", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .foot__titles {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .foot__listPages {
+    font-family: "Dosis", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    list-style: none;
+  }
+  .foot__lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.678);
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    margin-right: 15px;
+  }
+  a.foot__style {
+    font-family: "Dosis", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: darkgray;
+    text-decoration: none;
+  }
+  div.foot__cont ul.foot__contact {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /*Logo responsive*/
   .logo img {
     width: 100vw;
   }

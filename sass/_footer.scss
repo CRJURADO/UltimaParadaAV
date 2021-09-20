@@ -1,0 +1,176 @@
+/*Estilos del pie de pagina*/
+.foot{
+    background-image: url("../Imagenes/Texturas/Textura.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-top: $size15;
+    padding-left: $size15;
+    padding-bottom: $size15;
+    color:rgb(255, 255, 255);
+    border-radius: 2px;
+    margin-bottom: $size5;
+    display: flex;
+
+}
+
+@media screen  and (max-width: $breakpoint-mobile){
+
+    .foot__titles{
+        font-family: $font-family;
+        font-size: $parrafs-mbl;
+        font-weight: $font-big;
+    }
+
+    .foot__listPages{
+        font-family: $font-family;
+        font-size: 5px;
+        font-weight: $font-medium;
+        list-style: none;
+        padding-left: 25px;
+    }
+
+    .foot__lists{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        background-color: rgba(0, 0, 0, 0.678);
+        width: $pct-full;
+        padding-top: $size15;
+        padding-bottom: $size15;
+        border-radius: 8px;
+        margin-right: $size15;
+    }
+
+    a{
+        &.foot__style{
+            font-family: $font-family;
+            font-size: $parrafs-mbl;
+            font-weight: $font-medium;
+            color: darkgray;
+            text-decoration: none;
+        }
+    }
+
+    div{
+        &.foot__cont{
+            ul{
+                &.foot__contact{
+                    font-family: $font-family;
+                    font-size: $parrafs-mbl;
+                    font-weight: $font-medium;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen  and (min-width: 426px){
+
+    .foot__titles{
+        font-family: $font-family;
+        font-size: $parrafs-mbl;
+        font-weight: $font-big;
+    }
+
+    .foot__listPages{
+        font-family: $font-family;
+        font-size: 5px;
+        font-weight: $font-medium;
+        list-style: none;
+    }
+
+    .foot__lists{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.678);
+        width: $pct-full;
+        padding-top: $size15;
+        padding-bottom: $size15;
+        border-radius: 8px;
+        margin-right: $size15;
+    }
+
+    a{
+        &.foot__style{
+            font-family: $font-family;
+            font-size: $parrafs-mbl;
+            font-weight: $font-medium;
+            color: darkgray;
+            text-decoration: none;
+        }
+    }
+
+    div{
+        &.foot__cont{
+            ul{
+                &.foot__contact{
+                    font-family: $font-family;
+                    font-size: $parrafs-mbl;
+                    font-weight: $font-medium;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+@media screen  and (min-width: 992px){
+
+    .foot__titles{
+        font-family: $font-family;
+        font-size: $font-pc;
+        font-weight: $font-big;
+    }
+
+    .foot__listPages{
+        font-family: $font-family;
+        font-size: $font-tbt;
+        font-weight: $font-medium;
+        list-style: none;
+    }
+
+    .foot__lists{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.678);
+        width: $pct-full;
+        padding-top: $size15;
+        padding-bottom: $size15;
+        border-radius: 8px;
+        margin-right: $size15;
+    }
+
+    a{
+        &.foot__style{
+            font-family: $font-family;
+            font-size: $titles-mbl;
+            font-weight: $font-medium;
+            color: darkgray;
+            text-decoration: none;
+        }
+    }
+
+    div{
+        &.foot__cont{
+            ul{
+                &.foot__contact{
+                    font-family: $font-family;
+                    font-size: $font-pc;
+                    font-weight: $font-medium;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
