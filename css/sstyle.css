@@ -22,7 +22,7 @@
 @media screen and (max-width: 425px) {
   .foot__titles {
     font-family: "Dosis", sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
   }
   .foot__listPages {
@@ -50,14 +50,14 @@
   }
   a.foot__style {
     font-family: "Dosis", sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 500;
     color: darkgray;
     text-decoration: none;
   }
   div.foot__cont ul.foot__contact {
     font-family: "Dosis", sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 500;
     list-style: none;
     display: -webkit-box;
@@ -74,7 +74,7 @@
 @media screen and (min-width: 426px) {
   .foot__titles {
     font-family: "Dosis", sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 700;
   }
   .foot__listPages {
@@ -99,14 +99,14 @@
   }
   a.foot__style {
     font-family: "Dosis", sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 500;
     color: darkgray;
     text-decoration: none;
   }
   div.foot__cont ul.foot__contact {
     font-family: "Dosis", sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 500;
     list-style: none;
     display: -webkit-box;
@@ -123,7 +123,7 @@
 @media screen and (min-width: 992px) {
   .foot__titles {
     font-family: "Dosis", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
   }
   .foot__listPages {
@@ -148,14 +148,14 @@
   }
   a.foot__style {
     font-family: "Dosis", sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 500;
     color: darkgray;
     text-decoration: none;
   }
   div.foot__cont ul.foot__contact {
     font-family: "Dosis", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     list-style: none;
     display: -webkit-box;
@@ -219,97 +219,153 @@
     padding-bottom: 10px;
     padding-left: 30px;
   }
-  .largometrajes__secPar {
-    background-color: #d7d6d86c;
-    border-radius: 2px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .largometrajes {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
   }
-  .videoclips__secPar {
-    background-color: #d7d6d86c;
-    border-radius: 2px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .cortometrajes {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
   }
-  .cortometrajes__secImp {
-    background-color: #ffffffa1;
-    border-radius: 2px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .videoclips {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
   }
-  .publicidad__secImp {
-    background-color: #ffffffa1;
-    border-radius: 2px;
+  .publicidad {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .largometrajes__section {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 14px 80px;
+            box-shadow: 0px 14px 80px;
+    max-width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 2%;
+    background-color: white;
+  }
+  .cortometrajes__section {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 14px 80px;
+            box-shadow: 0px 14px 80px;
+    max-width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 2%;
+    background-color: white;
+  }
+  .videoclips__section {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 14px 80px;
+            box-shadow: 0px 14px 80px;
+    max-width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 2%;
+    background-color: white;
+  }
+  .publicidad__section {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 14px 80px;
+            box-shadow: 0px 14px 80px;
+    max-width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 2%;
+    background-color: white;
   }
   .largometrajes__vidText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: start;
-        align-content: flex-start;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
   }
   .cortometrajes__vidText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: start;
-        align-content: flex-start;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
   }
   .videoclips__vidText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: start;
-        align-content: flex-start;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
   }
   .publicidad__vidText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: start;
-        align-content: flex-start;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
   }
-  .largometrajes__secVid {
+  .largometrajes__imgVid {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     width: 100%;
-    height: 65%;
+    height: 100%;
+    -ms-grid-column: 1;
+    grid-column: 1;
   }
-  .cortometrajes__secVid {
+  .cortometrajes__imgVid {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     width: 100%;
-    height: 65%;
+    height: 100%;
+    -ms-grid-column: 1;
+    grid-column: 1;
   }
-  .videoclips__secVid {
+  .videoclips__imgVid {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     width: 100%;
-    height: 65%;
+    height: 100%;
+    -ms-grid-column: 1;
+    grid-column: 1;
   }
-  .videoclips__secImg {
+  .publicidad__imgVid {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     width: 100%;
-    height: 65%;
-  }
-  .publicidad__secImg {
-    width: 100%;
-    height: 65%;
+    height: 100%;
+    -ms-grid-column: 1;
+    grid-column: 1;
   }
   .largometrajes__containText {
     display: -webkit-box;
@@ -373,43 +429,140 @@
   }
   .largometrajes__subtitles {
     font-family: "Dosis", sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 700;
   }
   .cortometrajes__subtitles {
     font-family: "Dosis", sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 700;
   }
   .videoclips__subtitles {
     font-family: "Dosis", sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 700;
   }
   .publicidad__subtitles {
     font-family: "Dosis", sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 700;
   }
   .largometrajes__parrafs {
     font-family: "Dosis", sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 500;
   }
   .cortometrajes__parrafs {
     font-family: "Dosis", sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 500;
   }
   .videoclips__parrafs {
     font-family: "Dosis", sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 500;
   }
   .publicidad__parrafs {
     font-family: "Dosis", sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 500;
+  }
+  .section {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .section__item {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 14px 80px;
+            box-shadow: 0px 14px 80px;
+    max-width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 2%;
+    background-color: white;
+  }
+  .section__imgText {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  .section__imgText1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 0px;
+  }
+  .section__secImg {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 100%;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .section__containText {
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .section__containText1 {
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .section__subtitles {
+    font-family: "Dosis", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .section__parrafs {
+    font-family: "Dosis", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  /*Tablas*/
+  .section__listActors {
+    font-family: "Dosis", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgba(105, 105, 105, 0.425);
+    margin-top: 25px;
+    margin-left: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 20px;
+            box-shadow: 0px 5px 20px;
+  }
+  .section__listActors tbody, .section__listActors td, .section__listActors tfoot, .section__listActors th, .section__listActors thead, .section__listActors tr {
+    padding: 10px;
+  }
+  .carousel-inner--grid {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .carousel-inner--grid img, .carousel-inner--grid svg {
+    max-width: 383px;
   }
 }
 
@@ -458,189 +611,330 @@
     padding-bottom: 10px;
     padding-left: 30px;
   }
-  .largometrajes__secPar {
-    background-color: #d7d6d86c;
-    border-radius: 2px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .largometrajes {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
   }
-  .videoclips__secPar {
-    background-color: #d7d6d86c;
-    border-radius: 2px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .cortometrajes {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
   }
-  .cortometrajes__secImp {
-    background-color: #ffffffa1;
-    border-radius: 2px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .videoclips {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
   }
-  .publicidad__secImp {
-    background-color: #ffffffa1;
-    border-radius: 2px;
+  .publicidad {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .largometrajes__section {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 14px 80px;
+            box-shadow: 0px 14px 80px;
+    max-width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1%;
+    background-color: white;
+  }
+  .cortometrajes__section {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 14px 80px;
+            box-shadow: 0px 14px 80px;
+    max-width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1%;
+    background-color: white;
+  }
+  .videoclips__section {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 14px 80px;
+            box-shadow: 0px 14px 80px;
+    max-width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1%;
+    background-color: white;
+  }
+  .publicidad__section {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 14px 80px;
+            box-shadow: 0px 14px 80px;
+    max-width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1%;
+    background-color: white;
   }
   .largometrajes__vidText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
   .cortometrajes__vidText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
   .videoclips__vidText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
   .publicidad__vidText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
-  .largometrajes__secVid {
-    width: 33%;
+  .largometrajes__imgVid {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
     height: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
   }
-  .cortometrajes__secVid {
-    width: 33%;
+  .cortometrajes__imgVid {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
     height: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
   }
-  .videoclips__secVid {
-    width: 33%;
+  .videoclips__imgVid {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
     height: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
   }
-  .videoclips__secImg {
-    width: 33%;
+  .publicidad__imgVid {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
     height: 100%;
-  }
-  .publicidad__secImg {
-    width: 33%;
-    height: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
   }
   .largometrajes__containText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-preferred-size: 370px;
-        flex-basis: 370px;
-    margin: 3%;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .cortometrajes__containText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-preferred-size: 370px;
-        flex-basis: 370px;
-    margin: 3%;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .videoclips__containText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-preferred-size: 370px;
-        flex-basis: 370px;
-    margin: 3%;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .publicidad__containText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-preferred-size: 370px;
-        flex-basis: 370px;
-    margin: 3%;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .largometrajes__subtitles {
     font-family: "Dosis", sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 700;
   }
   .cortometrajes__subtitles {
     font-family: "Dosis", sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 700;
   }
   .videoclips__subtitles {
     font-family: "Dosis", sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 700;
   }
   .publicidad__subtitles {
     font-family: "Dosis", sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 700;
   }
   .largometrajes__parrafs {
     font-family: "Dosis", sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
   }
   .cortometrajes__parrafs {
     font-family: "Dosis", sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
   }
   .videoclips__parrafs {
     font-family: "Dosis", sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
   }
   .publicidad__parrafs {
     font-family: "Dosis", sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
+  }
+  .section {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .section__item {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 14px 80px;
+            box-shadow: 0px 14px 80px;
+    max-width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1%;
+    background-color: white;
+  }
+  .section__imgText {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .section__imgText1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 0px;
+  }
+  .section__secImg {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    height: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .section__containText {
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .section__containText1 {
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-column: 2/5;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .section__subtitles {
+    font-family: "Dosis", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .section__parrafs {
+    font-family: "Dosis", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  /*Tablas*/
+  .section__listActors {
+    font-family: "Dosis", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: rgba(105, 105, 105, 0.425);
+    margin-top: 25px;
+    margin-left: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 20px;
+            box-shadow: 0px 5px 20px;
+  }
+  .section__listActors tbody, .section__listActors td, .section__listActors tfoot, .section__listActors th, .section__listActors thead, .section__listActors tr {
+    padding: 10px;
+  }
+  .carousel-inner--grid {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    height: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
   }
 }
 
@@ -684,133 +978,193 @@
     padding-bottom: 10px;
     padding-left: 30px;
   }
-  .largometrajes__secPar {
-    background-color: #d7d6d86c;
-    border-radius: 2px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .largometrajes {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
   }
-  .videoclips__secPar {
-    background-color: #d7d6d86c;
-    border-radius: 2px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .cortometrajes {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
   }
-  .cortometrajes__secImp {
-    background-color: #ffffffa1;
-    border-radius: 2px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .videoclips {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
   }
-  .publicidad__secImp {
-    background-color: #ffffffa1;
-    border-radius: 2px;
+  .publicidad {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .largometrajes__section {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 14px 80px;
+            box-shadow: 0px 14px 80px;
+    max-width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1%;
+    background-color: white;
+  }
+  .cortometrajes__section {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 14px 80px;
+            box-shadow: 0px 14px 80px;
+    max-width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1%;
+    background-color: white;
+  }
+  .videoclips__section {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 14px 80px;
+            box-shadow: 0px 14px 80px;
+    max-width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1%;
+    background-color: white;
+  }
+  .publicidad__section {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 14px 80px;
+            box-shadow: 0px 14px 80px;
+    max-width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1%;
+    background-color: white;
   }
   .largometrajes__vidText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
   .cortometrajes__vidText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
   .videoclips__vidText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
   .publicidad__vidText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
-  .largometrajes__secVid {
-    width: 33%;
+  .largometrajes__imgVid {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
     height: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
   }
-  .cortometrajes__secVid {
-    width: 33%;
+  .cortometrajes__imgVid {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
     height: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
   }
-  .videoclips__secVid {
-    width: 33%;
+  .videoclips__imgVid {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
     height: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
   }
-  .videoclips__secImg {
-    width: 33%;
+  .publicidad__imgVid {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
     height: 100%;
-  }
-  .publicidad__secImg {
-    width: 33%;
-    height: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
   }
   .largometrajes__containText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-preferred-size: 350px;
-        flex-basis: 350px;
-    margin-right: 35%;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .cortometrajes__containText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-preferred-size: 350px;
-        flex-basis: 350px;
-    margin-right: 35%;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .videoclips__containText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-preferred-size: 350px;
-        flex-basis: 350px;
-    margin-right: 35%;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .publicidad__containText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-preferred-size: 350px;
-        flex-basis: 350px;
-    margin-right: 35%;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .largometrajes__subtitles {
     font-family: "Dosis", sans-serif;
@@ -834,23 +1188,120 @@
   }
   .largometrajes__parrafs {
     font-family: "Dosis", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
   }
   .cortometrajes__parrafs {
     font-family: "Dosis", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
   }
   .videoclips__parrafs {
     font-family: "Dosis", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
   }
   .publicidad__parrafs {
     font-family: "Dosis", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .section {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .section__item {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 14px 80px;
+            box-shadow: 0px 14px 80px;
+    max-width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1%;
+    background-color: white;
+  }
+  .section__imgText {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .section__imgText1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 0px;
+  }
+  .section__secImg {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    height: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .section__containText {
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .section__containText1 {
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-column: 2/5;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .section__subtitles {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .section__parrafs {
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  /*Tablas*/
+  .section__listActors {
+    font-family: "Dosis", sans-serif;
     font-size: 20px;
     font-weight: 500;
+    background-color: rgba(105, 105, 105, 0.425);
+    margin-top: 25px;
+    margin-left: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 20px;
+            box-shadow: 0px 5px 20px;
+  }
+  .section__listActors tbody, .section__listActors td, .section__listActors tfoot, .section__listActors th, .section__listActors thead, .section__listActors tr {
+    padding: 10px;
+  }
+  .carousel-inner--grid {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    height: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
   }
 }
 /*# sourceMappingURL=sstyle.css.map */

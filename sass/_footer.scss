@@ -73,7 +73,7 @@
 
     .foot__titles{
         font-family: $font-family;
-        font-size: $parrafs-mbl;
+        font-size: $parrafs-tbt;
         font-weight: $font-big;
     }
 
@@ -98,7 +98,7 @@
     a{
         &.foot__style{
             font-family: $font-family;
-            font-size: $parrafs-mbl;
+            font-size: $parrafs-tbt;
             font-weight: $font-medium;
             color: darkgray;
             text-decoration: none;
@@ -110,7 +110,7 @@
             ul{
                 &.foot__contact{
                     font-family: $font-family;
-                    font-size: $parrafs-mbl;
+                    font-size: $parrafs-tbt;
                     font-weight: $font-medium;
                     list-style: none;
                     display: flex;
@@ -126,7 +126,7 @@
 
     .foot__titles{
         font-family: $font-family;
-        font-size: $font-pc;
+        font-size: $parrafs-pc;
         font-weight: $font-big;
     }
 
@@ -151,7 +151,7 @@
     a{
         &.foot__style{
             font-family: $font-family;
-            font-size: $titles-mbl;
+            font-size: $parrafs-pc;
             font-weight: $font-medium;
             color: darkgray;
             text-decoration: none;
@@ -163,7 +163,7 @@
             ul{
                 &.foot__contact{
                     font-family: $font-family;
-                    font-size: $font-pc;
+                    font-size: $parrafs-pc;
                     font-weight: $font-medium;
                     list-style: none;
                     display: flex;

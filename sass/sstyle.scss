@@ -3,13 +3,12 @@
 @import 'header';
 @import 'footer';
 
-
 @media screen  and (max-width: $breakpoint-mobile){
 
     /*Logo responsive*/
     .logo{
         img{
-            width: 100vw;
+            width: $vw-full;
         }
     }
     
@@ -25,17 +24,17 @@
     .realNews{
         position: relative;
         z-index: 1;
-        width: 100%;
-        height: 100%;
+        width: $pct-full;
+        height: $pct-full;
     }
 
     .realNews__portada{
         display: contents;
-        width: 100%;
+        width: $pct-full;
         height: 150px;
 
         img{
-            width: 100vw;
+            width: $vw-full;
         }
     }
 
@@ -50,8 +49,8 @@
         background-color: rgba(0, 0, 0, 0.486);
         color: $bigTitles-color;
         padding-left: 30px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: $size10;
+        padding-bottom: $size10;
     }
 
     .opacityDiv__titles{
@@ -60,65 +59,52 @@
         font-weight: $font-medium;
         background-color: rgba(0, 0, 0, 0.486);
         color: $titles-color;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: $size10;
+        padding-bottom: $size10;
         padding-left: 30px;
     }
 
-    @each $proyecto, $valor in $proyectosPar {
+    @each $proyecto, $valor in $proyectos {
         
-        .#{$proyecto}__secPar {
-            background-color: #d7d6d86c;
-            border-radius: $valor;
-            display: flex;
-            flex-wrap: wrap;
+        .#{$proyecto} {
+            display: grid;
+            align-items: center;
+            justify-items: center;
         }
     }
 
-    @each $proyecto, $valor in $proyectosImp {
-        
-        .#{$proyecto}__secImp {
 
-            background-color: #ffffffa1;
-            border-radius: $valor;
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto}__section {
+            border-radius: $size10;
+            box-shadow: 0px 14px 80px;
+            max-width: 90%;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: row;
+            margin: 2%;
+            background-color: white;
         }
     }
 
     @each $proyecto, $valor in $proyectos {
         
         .#{$proyecto}__vidText {
-            display: flex;
-            flex-wrap: wrap;  
-            align-content: flex-start;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
         }
     }
- 
-    .largometrajes__secVid{
-        width: 100%; 
-        height: 65%;
-    }
 
-    .cortometrajes__secVid{
-        width: 100%; 
-        height: 65%;
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto}__imgVid {
+            border-top-left-radius: $size10;
+            border-top-right-radius: $size10;
+            width: $pct-full;
+            height: $pct-full;
+            grid-column: 1;
+        }
     }
-
-    .videoclips__secVid{
-        width: 100%; 
-        height: 65%;
-    }  
-    
-    .videoclips__secImg{
-        width: 100%; 
-        height: 65%;
-    } 
-    
-    .publicidad__secImg{
-        width: 100%; 
-        height: 65%;
-    } 
 
     @each $proyecto, $valor in $proyectos {
         
@@ -149,6 +135,93 @@
         }
     }
 
+    .section{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .section__item{
+        border-radius: $size10;
+        box-shadow: 0px 14px 80px;
+        max-width: 90%;
+        display: flex;
+        flex-direction: row;
+        margin: 2%;
+        background-color: white;
+    }
+
+    .section__imgText{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .section__imgText1{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        margin-bottom: 0px;
+    }
+
+    .section__secImg{
+        border-top-left-radius: $size10;
+        border-top-right-radius: $size10;
+        width: $pct-full;
+        height: $pct-full;
+        grid-column: 1;
+    }
+
+    .section__containText{
+        padding: 1.5em 1.5em 1.5em 1.5em;
+        grid-row: 2;
+        align-self: center;
+    }
+
+    .section__containText1{
+        padding: 1.5em 1.5em 1.5em 1.5em;
+        grid-row: 2;
+        align-self: center;
+    }
+
+    .section__subtitles{
+        font-family: $font-family;
+        font-size: $subtitles-mbl;
+        font-weight: $font-big;
+    }
+
+    .section__parrafs{
+        font-family: $font-family;
+        font-size: $parrafs-mbl;
+        font-weight: $font-medium;
+    }
+
+    /*Tablas*/
+    .section__listActors{
+        font-family: $font-family;
+        font-size: $subtitles-mbl;
+        font-weight: $font-medium;
+        background-color: rgba(105, 105, 105, 0.425);
+        margin-top: 25px;
+        margin-left: 30px;
+        border-radius: $size10;
+        box-shadow: 0px 5px 20px;
+
+        tbody, td, tfoot, th, thead, tr{
+            padding: $size10;
+        }
+    }
+
+    .carousel-inner--grid{
+        border-top-left-radius: $size10;
+        border-top-right-radius: $size10;
+        width: $pct-full;
+        height: $pct-full;
+        grid-column: 1/3;
+
+        img, svg{
+            max-width: 383px;
+        }
+    }
+
 }
 
 @media screen  and (min-width: $breakpoint-tablet){
@@ -167,7 +240,7 @@
 
     .realNews__portada{
         display: contents;
-        width: 100%;
+        width: $pct-full;
         height: 150px;
     }
 
@@ -182,8 +255,8 @@
         background-color: rgba(0, 0, 0, 0.486);
         color: $bigTitles-color;
         padding-left: 30px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: $size10;
+        padding-bottom: $size10;
     }
 
     .opacityDiv__titles{
@@ -192,162 +265,160 @@
         font-weight: $font-medium;
         background-color: rgba(0, 0, 0, 0.486);
         color: $titles-color;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: $size10;
+        padding-bottom: $size10;
         padding-left: 30px;
     }
 
-    .largometrajes__secPar{
-        background-color: #d7d6d86c;
-        border-radius: 2px;
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto} {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+    }
+
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto}__section {
+            border-radius: $size10;
+            box-shadow: 0px 14px 80px;
+            max-width: 90%;
+            display: flex;
+            flex-direction: row;
+            margin: 1%;
+            background-color: white;
+        }
+    }
+
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto}__vidText {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+        }
+    }
+
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto}__imgVid {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            width: $pct-full;
+            height: $pct-full;
+            grid-column: 1/3;
+        }
+    }
+
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto}__containText {
+            padding: 1.5em 1.5em 1.5em 1.5em;
+            grid-column: 3/5;
+            align-self: center;
+        }
+    }
+
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto}__subtitles {
+            font-family: $font-family;
+            font-size: $subtitles-tbt;
+            font-weight: $font-big;
+        }
+    }
+
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto}__parrafs {
+            font-family: $font-family;
+            font-size: $parrafs-tbt;
+            font-weight: $font-medium;
+        }
+    }
+
+    .section{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .section__item{
+        border-radius: $size10;
+        box-shadow: 0px 14px 80px;
+        max-width: 90%;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 1%;
+        background-color: white;
     }
 
-    .videoclips__secPar{
-        background-color: #d7d6d86c;
-        border-radius: 2px;
-        display: flex;
-        flex-wrap: wrap;
+    .section__imgText{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    .cortometrajes__secImp{
-        background-color: #ffffffa1;
-        border-radius: 2px;
-        display: flex;
-        flex-wrap: wrap;
+    .section__imgText1{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 0px;
     }
 
-    .publicidad__secImp{
-        background-color: #ffffffa1;
-        border-radius: 2px;
-        display: flex;
-        flex-wrap: wrap;
+    .section__secImg{
+        border-top-left-radius: $size10;
+        border-bottom-left-radius: $size10;
+        width: $pct-full;
+        height: $pct-full;
+        grid-column: 1/3;
     }
 
-    .largometrajes__vidText{
-        display: flex;
-        flex-wrap: wrap;  
+    .section__containText{
+        padding: 1.5em 1.5em 1.5em 1.5em;
+        grid-column: 3/5;
+        align-self: center;
     }
 
-    .cortometrajes__vidText{
-        display: flex;
-        flex-wrap: wrap;  
+    .section__containText1{
+        padding: 1.5em 1.5em 1.5em 1.5em;
+        grid-column: 2/5;
+        align-self: center;
     }
 
-    .videoclips__vidText{
-        display: flex;
-        flex-wrap: wrap;  
-    }
-
-    .publicidad__vidText{
-        display: flex;
-        flex-wrap: wrap;  
-    }
-
-    .largometrajes__secVid{
-        width: 33%; 
-        height: 100%;
-    }
-
-    .cortometrajes__secVid{
-        width: 33%; 
-        height: 100%;
-    }
-
-    .videoclips__secVid{
-        width: 33%; 
-        height: 100%;
-    }
-
-    .videoclips__secImg{
-        width: 33%; 
-        height: 100%;
-    }
-
-    .publicidad__secImg{
-        width: 33%; 
-        height: 100%;
-    }
-
-    .largometrajes__containText{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-basis: 370px;
-        margin: 3%;
-    }
-
-    .cortometrajes__containText{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-basis: 370px;
-        margin: 3%;
-    }
-
-    .videoclips__containText{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-basis: 370px;
-        margin: 3%;
-    }
-
-    .publicidad__containText{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-basis: 370px;
-        margin: 3%;
-    }
-
-    .largometrajes__subtitles{
+    .section__subtitles{
         font-family: $font-family;
         font-size: $subtitles-tbt;
         font-weight: $font-big;
     }
 
-    .cortometrajes__subtitles{
+    .section__parrafs{
+        font-family: $font-family;
+        font-size: $parrafs-tbt;
+        font-weight: $font-medium;
+    }
+
+    /*Tablas*/
+    .section__listActors{
         font-family: $font-family;
         font-size: $subtitles-tbt;
-        font-weight: $font-big;
-    }
-
-    .videoclips__subtitles{
-        font-family: $font-family;
-        font-size: $subtitles-tbt;
-        font-weight: $font-big;
-    }
-
-    .publicidad__subtitles{
-        font-family: $font-family;
-        font-size: $subtitles-tbt;
-        font-weight: $font-big;
-    }
-
-    .largometrajes__parrafs{
-        font-family: $font-family;
-        font-size: $parrafs-tbt;
         font-weight: $font-medium;
+        background-color: rgba(105, 105, 105, 0.425);
+        margin-top: 25px;
+        margin-left: 30px;
+        border-radius: $size10;
+        box-shadow: 0px 5px 20px;
+
+        tbody, td, tfoot, th, thead, tr{
+            padding: $size10;
+        }
     }
 
-    .cortometrajes__parrafs{
-        font-family: $font-family;
-        font-size: $parrafs-tbt;
-        font-weight: $font-medium;
-    }
-
-    .videoclips__parrafs{
-        font-family: $font-family;
-        font-size: $parrafs-tbt;
-        font-weight: $font-medium;
-    }
-
-    .publicidad__parrafs{
-        font-family: $font-family;
-        font-size: $parrafs-tbt;
-        font-weight: $font-medium;
+    .carousel-inner--grid{
+        border-top-left-radius: $size10;
+        border-bottom-left-radius: $size10;
+        width: $pct-full;
+        height: $pct-full;
+        grid-column: 1/3;
     }
 
 }
@@ -364,12 +435,12 @@
     .realNews{
         position: relative;
         z-index: 1;
-        width: 100%;
-        height: 100%;
+        width: $pct-full;
+        height: $pct-full;
     }
 
     .realNews__portada{
-        width: 100vw;
+        width: $vw-full;
     }
 
     .opacityDiv{
@@ -383,8 +454,8 @@
         background-color: rgba(0, 0, 0, 0.486);
         color: $bigTitles-color;
         padding-left: 30px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: $size10;
+        padding-bottom: $size10;
     }
 
     .opacityDiv__titles{
@@ -393,154 +464,160 @@
         font-weight: $font-medium;
         background-color: rgba(0, 0, 0, 0.486);
         color: $titles-color;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: $size10;
+        padding-bottom: $size10;
         padding-left: 30px;
     }
 
-    .largometrajes__secPar{
-        background-color: #d7d6d86c;
-        border-radius: 2px;
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto} {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+    }
+
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto}__section {
+            border-radius: $size10;
+            box-shadow: 0px 14px 80px;
+            max-width: 90%;
+            display: flex;
+            flex-direction: row;
+            margin: 1%;
+            background-color: white;
+        }
+    }
+
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto}__vidText {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto}__imgVid {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            width: $pct-full;
+            height: $pct-full;
+            grid-column: 1/3;
+        }
+    }
+
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto}__containText {
+            padding: 1.5em 1.5em 1.5em 1.5em;
+            grid-column: 3/5;
+            align-self: center;
+        }
+    }
+
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto}__subtitles {
+            font-family: $font-family;
+            font-size: $subtitles-pc;
+            font-weight: $font-big;
+        }
+    }
+
+    @each $proyecto, $valor in $proyectos {
+        
+        .#{$proyecto}__parrafs {
+            font-family: $font-family;
+            font-size: $parrafs-pc;
+            font-weight: $font-medium;
+        }
+    }
+
+    .section{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .section__item{
+        border-radius: $size10;
+        box-shadow: 0px 14px 80px;
+        max-width: 90%;
         display: flex;
+        flex-direction: row;
+        margin: 1%;
+        background-color: white;
     }
 
-    .videoclips__secPar{
-        background-color: #d7d6d86c;
-        border-radius: 2px;
-        display: flex;
+    .section__imgText{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    .cortometrajes__secImp{
-        background-color: #ffffffa1;
-        border-radius: 2px;
-        display: flex;
+    .section__imgText1{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 0px;
     }
 
-    .publicidad__secImp{
-        background-color: #ffffffa1;
-        border-radius: 2px;
-        display: flex;
+    .section__secImg{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: $pct-full;
+        height: $pct-full;
+        grid-column: 1/3;
     }
 
-    .largometrajes__vidText{
-        display: flex; 
+    .section__containText{
+        padding: 1.5em 1.5em 1.5em 1.5em;
+        grid-column: 3/5;
+        align-self: center;
     }
 
-    .cortometrajes__vidText{
-        display: flex; 
+    .section__containText1{
+        padding: 1.5em 1.5em 1.5em 1.5em;
+        grid-column: 2/5;
+        align-self: center;
     }
 
-    .videoclips__vidText{
-        display: flex; 
-    }
-
-    .publicidad__vidText{
-        display: flex; 
-    }
-
-    .largometrajes__secVid{
-        width: 33%; 
-        height: 100%;
-    }
-
-    .cortometrajes__secVid{
-        width: 33%; 
-        height: 100%;
-    }
-
-    .videoclips__secVid{
-        width: 33%; 
-        height: 100%;
-    }
-
-    .videoclips__secImg{
-        width: 33%; 
-        height: 100%;
-    }
-
-    .publicidad__secImg{
-        width: 33%; 
-        height: 100%;
-    }
-
-    .largometrajes__containText{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-basis: 350px;
-        margin-right: 35%;
-    }
-
-    .cortometrajes__containText{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-basis: 350px;
-        margin-right: 35%;
-    }
-
-    .videoclips__containText{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-basis: 350px;
-        margin-right: 35%;
-    }
-
-    .publicidad__containText{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-basis: 350px;
-        margin-right: 35%;
-    }
-
-    .largometrajes__subtitles{
+    .section__subtitles{
         font-family: $font-family;
         font-size: $subtitles-pc;
         font-weight: $font-big;
     }
 
-    .cortometrajes__subtitles{
+    .section__parrafs{
+        font-family: $font-family;
+        font-size: $parrafs-pc;
+        font-weight: $font-medium;
+    }
+
+    /*Tablas*/
+    .section__listActors{
         font-family: $font-family;
         font-size: $subtitles-pc;
-        font-weight: $font-big;
-    }
-
-    .videoclips__subtitles{
-        font-family: $font-family;
-        font-size: $subtitles-pc;
-        font-weight: $font-big;
-    }
-
-    .publicidad__subtitles{
-        font-family: $font-family;
-        font-size: $subtitles-pc;
-        font-weight: $font-big;
-    }
-
-    .largometrajes__parrafs{
-        font-family: $font-family;
-        font-size: $parrafs-pc;
         font-weight: $font-medium;
+        background-color: rgba(105, 105, 105, 0.425);
+        margin-top: 25px;
+        margin-left: 30px;
+        border-radius: $size10;
+        box-shadow: 0px 5px 20px;
+
+        tbody, td, tfoot, th, thead, tr{
+            padding: $size10;
+        }
     }
 
-    .cortometrajes__parrafs{
-        font-family: $font-family;
-        font-size: $parrafs-pc;
-        font-weight: $font-medium;
-    }
-
-    .videoclips__parrafs{
-        font-family: $font-family;
-        font-size: $parrafs-pc;
-        font-weight: $font-medium;
-    }
-
-    .publicidad__parrafs{
-        font-family: $font-family;
-        font-size: $parrafs-pc;
-        font-weight: $font-medium;
+    .carousel-inner--grid{
+        border-top-left-radius: $size10;
+        border-bottom-left-radius: $size10;
+        width: $pct-full;
+        height: $pct-full;
+        grid-column: 1/3;
     }
 
 }

@@ -14,14 +14,14 @@ $bigTitles-pc: 32px;
 $titles-mbl: 17px;
 $titles-tbt: 20px;
 $titles-pc: 25px;
-$subtitles-mbl: 12px;
-$subtitles-tbt: 15px;
+$subtitles-mbl: 15px;
+$subtitles-tbt: 17px;
 $subtitles-pc: 20px;
-$parrafs-mbl: 10px;
-$parrafs-tbt: 13px;
+$parrafs-mbl: 12px;
+$parrafs-tbt: 15px;
+$parrafs-pc: 18px;
 $font-medium: 500;
 $font-big: 700;
-$parrafs-pc: 20px;
 $font-color: black;
 $bigTitles-color: rgb(255, 255, 255);
 $titles-color: rgb(255, 255, 255);
@@ -32,6 +32,7 @@ $size10: 10px;
 $size15: 15px;
 $size20: 20px;
 $pct-full: 100%;
+$vw-full: 100vw;
 
 
 /*Declarando Mapas*/
@@ -39,15 +40,5 @@ $proyectos: (
     largometrajes: 2px,
     cortometrajes: 2px,
     videoclips: 2px,
-    publicidad: 2px
-);
-
-$proyectosPar: (
-    largometrajes: 2px,
-    videoclips: 2px
-);
-
-$proyectosImp: (
-    cortometrajes: 2px,
     publicidad: 2px
 );
